@@ -19,7 +19,7 @@
 use core::alloc::{GlobalAlloc, Layout};
 use spin::Lazy;
 
-// Re-export `LockedHeap` from `slab_allocator_rs` to make this easier to use.
+/// A re-export of `slab_allocator_rs::LockedHeap` for ease-of-use reasons.
 pub use slab_allocator_rs::LockedHeap;
 
 /// A wrapper around `slab_allocator_rs::LockedHeap` that initializes the heap lazily.
