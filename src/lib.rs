@@ -22,7 +22,7 @@ use spin::Lazy;
 // Re-export `LockedHeap` from `slab_allocator_rs` to make this easier to use.
 pub use slab_allocator_rs::LockedHeap;
 
-// A wrapper around `slab_allocator_rs::LockedHeap` that initializes the heap lazily.
+/// A wrapper around `slab_allocator_rs::LockedHeap` that initializes the heap lazily.
 pub struct LazyHeap(Lazy<LockedHeap>);
 
 impl LazyHeap {
