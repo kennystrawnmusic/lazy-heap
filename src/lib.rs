@@ -7,6 +7,7 @@
 //!
 //! ```rust
 //! use lazy_heap::LazyHeap;
+//!
 //! #[global_allocator]
 //! pub static ALLOC: LazyHeap = LazyHeap::new(|| {
 //!    // allocator initialization code goes here
