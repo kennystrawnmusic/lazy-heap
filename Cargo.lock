@@ -19,7 +19,7 @@ dependencies = [
 
 [[package]]
 name = "lazy-heap"
-version = "0.1.1-alpha.3"
+version = "0.1.1-alpha.4"
 dependencies = [
  "slab_allocator_rs",
  "spin",
