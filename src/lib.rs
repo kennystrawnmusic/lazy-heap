@@ -1,6 +1,7 @@
 use core::alloc::{GlobalAlloc, Layout};
-pub use slab_allocator_rs::LockedHeap;
 use spin::Lazy;
+
+pub use slab_allocator_rs::LockedHeap;
 
 // A wrapper around `slab_allocator_rs::LockedHeap` that initializes the heap lazily.
 pub struct LazyHeap(Lazy<LockedHeap>);
