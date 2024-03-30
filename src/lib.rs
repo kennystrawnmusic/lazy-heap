@@ -11,6 +11,11 @@ impl LazyHeap {
         Self(Lazy::new(init))
     }
 
+    /// Create a new `LazyHeap` with the default initialization function.
+    pub const fn empty() -> Self {
+        Self(Lazy::new(|| LockedHeap::empty()))
+    }
+
     /// Initialize the heap with the given range.
     pub fn init(&self, begin: usize, len: usize) {
         unsafe {
