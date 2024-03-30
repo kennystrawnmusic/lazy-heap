@@ -10,7 +10,7 @@ use lazy_heap::LazyHeap;
 #[global_allocator]
 pub static ALLOC: LazyHeap = LazyHeap::new(|| {
     // allocator initialization code goes here
-})
+});
 ```
 
 This is a much more seamless, much less error-prone, set-it-and-forget-it way to initialize heap allocation than any other approach, because, with it, you can be guaranteed that any first attempt to use `alloc` will automatically initialize the heap for you.
