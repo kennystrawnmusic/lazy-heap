@@ -1,4 +1,4 @@
-use slab_allocator_rs::LockedHeap;
+pub use slab_allocator_rs::LockedHeap;
 use core::alloc::{Layout,GlobalAlloc};
 use spin::Lazy;
 
