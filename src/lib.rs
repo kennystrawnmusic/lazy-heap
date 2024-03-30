@@ -1,5 +1,5 @@
+use core::alloc::{GlobalAlloc, Layout};
 pub use slab_allocator_rs::LockedHeap;
-use core::alloc::{Layout,GlobalAlloc};
 use spin::Lazy;
 
 // A wrapper around `slab_allocator_rs::LockedHeap` that initializes the heap lazily.
